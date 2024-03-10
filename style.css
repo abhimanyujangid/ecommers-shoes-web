@@ -1,0 +1,49 @@
+body{
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-color: black;
+    color: white;
+    padding: 20px 50px ;
+}
+
+.navtop{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    background-color:gray;
+    padding: 10px 28px;
+    border-radius: 10px;
+}
+.searchinput{
+    border:none ;
+    background-color: transparent;
+}
+.searchinput::placeholder{
+    color: lightgray;
+}
+
+.limitedoffer{
+    font-size: 20px;
+    cursor: pointer;
+}
+/*................ BOTTOM  NAV BAR STYLE..........*/
+.navbottem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuitem{
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+}
+
