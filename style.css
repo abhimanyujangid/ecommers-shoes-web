@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Lato", sans-serif;
     padding: 0;
@@ -54,7 +58,7 @@ nav {
 
 .slider {
     background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
-   overflow: hidden;
+    overflow: hidden;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%)
 }
 
@@ -66,14 +70,15 @@ nav {
 
 
 .slideitem {
-    width: 100vw; 
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
-.sildertitle{ 
-    color: aliceblue;  
+
+.sildertitle {
+    color: aliceblue;
     position: absolute;
     top: 10%;
     right: 12%;
@@ -82,7 +87,8 @@ nav {
     text-align: center;
     z-index: 1;
 }
-.sliderprice{ 
+
+.sliderprice {
     color: aliceblue;
     position: absolute;
     top: 10%;
@@ -93,138 +99,259 @@ nav {
     border: 1px solid rgb(88, 88, 88);
     z-index: 1;
 }
-.buybutton{ 
+
+.buybutton {
     color: aliceblue;
     position: absolute;
     top: 50%;
     right: 10%;
     font-size: 30px;
-    font-weight:900;
+    font-weight: 900;
     border: 1px solid rgb(88, 88, 88);
     z-index: 1;
     background-color: black;
     cursor: pointer;
 }
-.sliderimg{
+
+.sliderimg {
     z-index: 1;
 }
-.sliderbg{
-width: 750px;
-height: 750px;
-border-radius: 50%;
- /*background-color: red;*/
-position: absolute;
+
+.sliderbg {
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    /*background-color: red;*/
+    position: absolute;
 }
-.buybutton:hover{
+
+.buybutton:hover {
     background-color: white;
     color: black;
 }
-.slideitem:nth-child(1) .sliderbg{
+
+.slideitem:nth-child(1) .sliderbg {
     background-color: #55bb7f;
-}.slideitem:nth-child(2) .sliderbg{
+}
+
+.slideitem:nth-child(2) .sliderbg {
     background-color: rgb(128, 91, 165);
-}.slideitem:nth-child(3) .sliderbg{
+}
+
+.slideitem:nth-child(3) .sliderbg {
     background-color: rgb(163, 168, 168);
-}.slideitem:nth-child(4) .sliderbg{
+}
+
+.slideitem:nth-child(4) .sliderbg {
     background-color: cornflowerblue;
-}.slideitem:nth-child(5) .sliderbg{
+}
+
+.slideitem:nth-child(5) .sliderbg {
     background-color: rgb(104, 103, 99);
 }
 
 
-.slideitem:nth-child(1) .sliderprice{
+.slideitem:nth-child(1) .sliderprice {
     color: #55bb7f;
-}.slideitem:nth-child(2) .sliderprice{
+}
+
+.slideitem:nth-child(2) .sliderprice {
     color: rgb(241, 241, 241);
-}.slideitem:nth-child(3) .sliderprice{
+}
+
+.slideitem:nth-child(3) .sliderprice {
     color: rgb(163, 168, 168);
-}.slideitem:nth-child(4) .sliderprice{
+}
+
+.slideitem:nth-child(4) .sliderprice {
     color: cornflowerblue;
-}.slideitem:nth-child(5) .sliderprice{
+}
+
+.slideitem:nth-child(5) .sliderprice {
     color: rgb(168, 149, 149);
 }
 
-.features{
+.features {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.feature{
+
+.feature {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 
 }
-.featureicon{
+
+.featureicon {
     width: 50px;
     height: 50px;
 }
-.featuretitle{
-    font-size:20px;
+
+.featuretitle {
+    font-size: 20px;
     font-weight: 600;
     margin: 20px;
 }
-.featureddesc{
+
+.featureddesc {
     color: gray;
     width: 50%;
     height: 100px;
 }
-.product{
+
+.product {
     height: 100vh;
     background-color: whitesmoke;
     position: relative;
     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
 }
-.productimg{
+
+.payment {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+}
+
+.payTitle {
+    font-size: 20px;
+    color: lightgray;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.payInput {
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.payInput::placeholder {
+    color: rgb(163, 163, 163);
+}
+
+.cardIcons {
+    display: flex;
+}
+
+.cardIcon {
+    margin-right: 10px;
+}
+
+.cardInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sm {
+    width: 30%;
+}
+
+.payButton {
+    position: absolute;
+    height: 40px;
+    bottom: -40;
+    width: 100%;
+    left: 0;
+    -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+    background-color: #369e62;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.productimg {
     width: 50%;
 }
 
-.productdetails{
+.productdetails {
     position: absolute;
     top: 10%;
     right: 0;
     width: 40%;
     padding: 50px;
 }
-.producttitle{
+
+.producttitle {
     font-size: 75px;
     font-weight: 900;
 }
-.productdec{
+
+.productdec {
     font-style: 24px;
     color: gray;
 }
-.colors,.sizes{
+
+.colors,
+.sizes {
     display: flex;
 }
-.colors{
+
+.color {
     width: 32px;
     height: 32px;
     border-radius: 5px;
-    background-color:black;
-    margin-right:10px;
+    background-color: black;
+    margin-right: 10px;
     cursor: pointer;
 }
-.color:last-child{
+
+.color:last-child {
     background-color: darkblue;
 }
-.size{
+
+.size {
     padding: 5px 20px;
     border: 1px solid black;
     margin-right: 10px;
+    margin-top: 10px;
     cursor: pointer;
     font-size: 20px;
 }
-.productbutton{
-    float : right;
+
+.productbutton {
+    float: right;
     padding: 10px 20px;
     background-color: black;
     color: white;
     font-weight: 600;
     cursor: pointer;
 }
-.productbutton:hover{
+
+.productbutton:hover {
     background-color: beige;
     color: black;
 }
