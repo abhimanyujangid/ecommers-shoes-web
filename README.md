@@ -11,7 +11,7 @@ To run this project locally, follow these steps:
 
 1. Clone this repository to your local machine.
    ```
-   git clone https://github.com/your/repository.git
+   git clone https://github.com/abhimanyujangid/ecommers-shoes-web.git
    ```
 2. Navigate to the project directory.
    ```
