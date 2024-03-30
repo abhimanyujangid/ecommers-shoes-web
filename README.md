@@ -1,5 +1,5 @@
-# ecommers-shoes-web
-Welcome to the documentation for your e-commerce website project. This web application is built using HTML, CSS, and JavaScript. It provides a simple platform for showcasing and selling products.
+# E-Commerce Shoes Website
+Welcome to our e-commerce shoes website! This platform is designed to provide users with a seamless shopping experience for footwear of all kinds.
 
 ## Technologies Used
 
